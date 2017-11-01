@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id = "car" class = "org.mysample.beans.Car" scope = "singleton" />
+   <bean id = "motorbike" class = "org.mysample.beans.MotorBike" scope = "prototype"/>
+   <bean class = "org.mysample.utilities.MyappApplicationContext"/>
+
+   <!-- <bean id = "car" class = "org.mysample.beans.Car" scope = "singleton">
+      <property name = "regNo" value = "1"/>
+      <property name = "name" value = "Car"/>
+      <property name ="size" value ="Medium-Sized"/>
+   </bean>
+   <bean id = "motorbike" class = "org.mysample.beans.MotorBike" scope = "prototype">
+      <property name = "regNo" value = "2"/>
+      <property name = "name" value = "MotorBike"/>
+      <property name ="size" value ="Small-Sized"/>
+   </bean> -->
+   
+   <!-- <bean id = "car" class = "org.mysample.beans.Car" scope = "singleton">
+      <constructor-arg value = "1"/>
+      <constructor-arg value = "Car"/>
+      <constructor-arg value ="Medium-Sized"/>
+   </bean>
+   <bean id = "motorbike" class = "org.mysample.beans.MotorBike" scope = "prototype">
+      <constructor-arg value = "2"/>
+      <constructor-arg value = "MotorBike"/>
+      <constructor-arg value ="Small-Sized"/>
+   </bean> -->
+   
+   <!-- <bean class="org.mysample.beans.Point" id="pointA">
+	  <property name="x" value="0"></property>
+	  <property name="y" value="0"></property>
+  	</bean>
+  
+	<bean class="org.mysample.beans.Point" id="pointB">
+	  <property name="x" value="-20"></property>
+	  <property name="y" value="0"></property>
+	</bean>
+  
+	<bean class="org.mysample.beans.Point" id="pointC">
+	   <property name="x" value="20"></property>
+	   <property name="y" value="0"></property>
+	</bean> -->
+
+</beans>
