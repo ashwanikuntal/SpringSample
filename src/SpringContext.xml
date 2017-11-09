@@ -7,7 +7,6 @@
    
    <bean id = "car" class = "org.mysample.beans.Car" scope = "singleton" />
    <bean id = "motorbike" class = "org.mysample.beans.MotorBike" scope = "prototype"/>
-   <bean class = "org.mysample.utilities.MyappApplicationContext"/>
 
    <!-- <bean id = "car" class = "org.mysample.beans.Car" scope = "singleton">
       <property name = "regNo" value = "1"/>
